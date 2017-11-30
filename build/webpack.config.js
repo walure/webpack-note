@@ -22,7 +22,29 @@ const config = {
 	},
 	module:{
 		rules: [
-	      {test: /\.(js|jsx)$/, use: 'babel-loader'}
+			{
+          test: /\.vue$/,
+          use: [
+            {
+              loader: 'vue-loader'
+            }
+          ]
+        },
+	      {test: /\.(js|jsx)$/, use: 'babel-loader'},
+	        {
+	          test: /\.css$/,
+	          use: ['style-loader', 'css-loader', 'postcss-loader']
+	        },
+
+	        {
+	          test: /\.(scss|sass)$/,
+	          use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
+	        },
+
+	        {
+	          test: /\.less$/,
+	          use: ['style-loader', 'css-loader', 'postcss-loader', 'less-loader']
+	        },
 	    ]
 	},
 	plugins: [
