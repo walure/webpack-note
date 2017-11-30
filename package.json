@@ -1,0 +1,22 @@
+{
+  "name": "webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+   "scripts": {
+    "dev":"webpack-dev-server --config ./bulid/webpack.config.js",
+     "build":"webpack --config ./build/webpack.config.js"
+   },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "es6": "0.0.7",
+    "webpack": "^3.8.1"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^2.30.1",
+    "babel-loader": "^7.1.2"
+  },
+
+  "author": "",
+  "license": "ISC"
+}
