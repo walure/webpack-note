@@ -5,15 +5,17 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server  --hot --inline --progress --config ./build/webpack.config.js",
-    "build": "webpack --config ./build/webpack.config.js"
+    "build": "webpack   --progress --config ./build/webpack.config.js"
   },
   "dependencies": {
     "babel-core": "^6.26.0",
     "clean-webpack-plugin": "^0.1.17",
     "es6": "0.0.7",
-    "unshift": "0.0.0",
+    "file-loader": "^1.1.5",
+    "lodash": "^4.17.4",
     "vue": "^2.5.9",
     "vue-hot-loader": "0.0.4",
+    "vue-html-loader": "^1.2.4",
     "vue-loader": "^13.5.0",
     "vue-router": "^3.0.1",
     "vue-template-compiler": "^2.5.9",

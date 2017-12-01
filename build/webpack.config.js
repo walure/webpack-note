@@ -13,7 +13,7 @@
 
 const path = require('path')
 const htmlWebpackPlugin = require('html-webpack-plugin')
-const webpack = require('webpack')
+
 
 const config = {
 	entry:path.resolve(__dirname,'../src/index.js'),
