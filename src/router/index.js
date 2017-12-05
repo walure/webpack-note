@@ -6,7 +6,7 @@ import config from './config.js'
 Vue.use(VueRouter)
 
 const router = new VueRouter({
-  mode: 'history',
+ // mode: 'history',// 有服务器配合的 
   routes :config
 })
 
